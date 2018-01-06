@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var Dollar = 110;
+    var Riyal = 28;
+    document.write("<h1><center>Select Currency  Dollar(S) or Riyal(R) to Convert Pkr </center></h1>");
+    var char =  prompt("Select the Currency:"); 
+    if(char == 'S'||char == 's')
+      {
+        var a = prompt("Enter the  Amount in Dollar:");
+        
+       var c = a  * 110 ;
+       document.write(`<h1>Converted Amount in ${c}PKR</h1>`); 
+      }
+      else
+      {
+        var b = prompt("Enter the  Amount in Riyal:");
+          var g = b  * 28 ;
+       document.write(`<h1>Converted Amount in ${g}PKR</h1>`);
+      }
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>

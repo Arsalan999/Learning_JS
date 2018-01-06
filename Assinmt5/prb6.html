@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     var data = prompt("Enter the  choice for temperature  F or C");
+      if(data == 'F'||data == 'f')
+      {
+        var a = prompt("Enter the  temperature:");
+        g=5/9;
+       var c = ((a-32)*g);
+       document.write(`${a}F is ${c}C`); 
+      }
+      else
+      {
+        var b = prompt("Enter the  temperature:");  
+        h=9/5;   
+        var b1=parseInt(b);
+        var e = ((b1*h)+32);
+       document.write(`${b1}C is ${e}F`); 
+      }
+    
+
+    </script>
+</body>
+</html>

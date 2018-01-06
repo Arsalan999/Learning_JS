@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    
+    var sum=0;
+    document.write("<h1><center>The LifeTime Supply Calculator</center></h1>");
+      var item = prompt("Enter your Favourite Snacks:");
+      var age = prompt("Enter your Current Age:");
+      var age1 = prompt("Enter your Last Estimated Age:");
+      var num = prompt("Amount of Snacks per day:");
+              
+      for(var i = age ; i < age1 ;i++ )
+            {
+            
+       sum =sum+3;
+            }
+       
+      document.write(`<h1>Favourite Snacks:${item}</h1>`);
+      document.write(`<h1>Current Age: ${age}</h1>`);
+      document.write(`<h1>Last Estimated Age:${age1}</h1>`);
+      document.write(`<h1>Snacks per day: ${num}</h1>`);
+      document.write(`<h1>you will need ${sum} ${item} to last you until the ripe old age of ${age1}<h1>`);
+    </script>
+</body>
+</html>
