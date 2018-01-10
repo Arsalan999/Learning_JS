@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+
+
+ name = prompt("Enter the Name:");  
+N_unit = prompt("Enter the Net Units");
+         s_unit = prompt("Enter the charges per units");
+         C_unit=parseInt(s_unit);
+   function infoBlock(name,N_unit,C_unit){
+
+    var d = new Date();
+ var c = d.getMonth();
+var date = ["January","Febuary","March","April","May","June","July","August","September","November","December"];
+
+//    document.write(`<h3>current month : ${date[c]}</h3>`);
+
+
+document.write(`<h1><center> ***K-Elecric Bill*** </center></h1>`);
+document.write(`<h3>*********************************************</h3>`);
+document.write(`<h3>*     1) Customer Name     :   ${name}                               *</h3>`);
+document.write(`<h3>*     2) Current Month     :   ${date[c]}                            *</h3>`);
+document.write(`<h3>*     3) Number OF Units   :   ${N_unit}                             *</h3>`);
+document.write(`<h3>*     4) Charges Per Units :   ${C_unit}                             *</h3>`);
+document.write(`<h3>*********************************************</h3>`);
+//document.write(`<h3></h3>`);
+    }
+
+    function Payable(N_unit,C_unit)
+    {
+   temp1 = (C_unit) * (N_unit) ;
+//   document.write(`<h3>Net Amount Payable (With in Due Date) : ${temp1 }</h3>`);
+
+return temp1 ;
+    }
+    Charges=prompt("Enter the Surcharges:");
+    S_Charges=parseInt(Charges);
+    function GrossAmount(temp1 ,S_Charges){
+
+temp2 = temp1 + S_Charges;
+return temp2;
+
+    }
+    abc2 = Payable(N_unit,C_unit);
+      abc1 = GrossAmount(temp1 ,S_Charges);
+     
+    function Display(abc1,abc2,S_Charges){
+document.write(`<h3>Net Amount Payable (With in Due Date) : ${abc2 }</h3>`);
+document.write(`<h3>Late payment Surharges : ${S_Charges}</h3>`);
+document.write(`<h3>Gross Amount Payable (After Due Date) : ${abc1}</h3>`);
+    }
+
+   // Display(abc1,abc2,S_Charges);
+     infoBlock(name,N_unit,C_unit);
+      
+     Display(abc1,abc2,S_Charges);
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        num1 = prompt("Enter the Number");
+        num1 = parseInt(num1);
+        if (num1 < 0) {
+            document.write(`<h1>Factorial of negative integers is not defined.\n</h1>`);
+        }
+        else {
+            f = factorial(num1);
+            document.write(`<h1>Number ${num1} and Factorial is : ${f}</h1>`);
+        }
+
+
+        function factorial(num1) {
+            if (num1 == 0)
+                return 1;
+            else
+                return (num1 * factorial(num1 - 1));
+        }
+    </script>
+</body>
+
+</html>

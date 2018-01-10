@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var num1 = prompt("Enter number 1");
+        var num2 = prompt("Enter number 2");
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        var chr = prompt("Enter the operator");
+        function calculate1(num1, num2) {
+            temp1 = num1 + num2;
+            document.write(`Addition : ${temp1}`);
+        }
+        function calculate2(num1, num2) {
+            temp2 = num1 - num2;
+            document.write(`Substracion : ${temp2}`);
+        }
+        function calculate3(num1, num2) {
+            temp3 = num1 / num2;
+            document.write(`Division : ${temp3}`);
+        }
+        function calculate5(num1, num2) {
+            temp5 = num1 % num2;
+            document.write(`Modulus : ${temp5}`);
+        }
+
+        function calculate5(num1, num2) {
+            temp4 = num1 * num2;
+            document.write(`Multiplication : ${temp4}`);
+        }
+
+        if (chr == '+') {
+            calculate1(num1, num2);
+
+        }
+        if (chr == '-') {
+            calculate2(num1, num2);
+
+        }
+
+        if (chr == '/') {
+
+            calculate3(num1, num2);
+        }
+
+        if (chr == '*') {
+
+            calculate4(num1, num2);
+        }
+        else if (chr == '%') {
+
+            calculate5(num1, num2);
+        }
+
+    </script>
+</body>
+
+</html>

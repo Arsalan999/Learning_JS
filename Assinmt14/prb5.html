@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        num1 = prompt("Enter Number 1");
+        num2 = prompt("Enter Number 2");
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        function sum(num1, num2) {
+
+            temp = num1 + num2;
+            return temp;
+        }
+
+        var temp1 = sum(num1, num2);
+        document.write(`<h3>Summation of two is : ${temp1} </h3>`);
+    </script>
+</body>
+
+</html>

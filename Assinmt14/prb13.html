@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        str1 = "the quick brown fox";
+        str2 = "";
+//        str4 = [];
+
+        function Title(str1, str2) {
+            str2 += str1[0].toUpperCase()
+            //str4[0] = str1[0].toUpperCase()
+            for (var i = 1; i < str1.length; i++) {
+
+                if (str1[i] == " ") {
+                      str2 += str1[i];        
+                    str2 += str1[i + 1].toUpperCase();
+      //              str4[i+1] = str1[i + 1].toUpperCase();
+                }
+                else {
+                    str2 += str1[i];
+                    //str4[i] += str1[i];
+//                    // continue;
+                }
+  //              console.log(str4)
+            }
+            return str2;
+        }
+        str3 = Title(str1, str2);
+        document.write(`<h1> String is : ${str3}</h1>`)
+    </script>
+
+</body>
+
+</html>

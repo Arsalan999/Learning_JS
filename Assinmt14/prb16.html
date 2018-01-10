@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var r = prompt("Enter the radius ");
+        r = parseInt(r);
+        var result1 = 0;
+        var result2 = 0;
+        function Area(r) {
+            temp = 0;
+            temp = (3.142) * (r * r);
+
+            return temp;
+        }
+        function Crcum(r) {
+            var temp1 = 0;
+            var temp1 = 2 * (3.142) * (r);
+
+            return temp1;
+
+        }
+
+        result1 = Crcum(r);
+        result2 = Area(r);
+        document.write(`<h1>Circumference of Cirlcle </h1> ${result1}`);
+        document.write(`<h1>Area of Cirlcle </h1> ${result2}`);
+    </script>
+</body>
+
+</html>

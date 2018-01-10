@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        base = prompt("Enter the Base");
+        base = parseInt(base);
+        prep = prompt("Enter the Perpendicular");
+        prep = parseInt(prep);
+        function cal(base, prep) {
+            sum = 0;
+            bs1 = sq1(base);
+            pr1 = sq1(prep);
+            sum = bs1 + pr1;
+            sum1 = sum * sum;
+            return sum1;
+        }
+
+        function sq1(base) {
+
+            temp1 = base * base;
+            return temp1;
+
+        }
+
+        function sq2(prep) {
+
+            temp2 = prep * prep;
+            return temp2;
+        }
+
+        var result = cal(base, prep);
+        document.write(`<h1>HAYPOTHESIS is : ${result}</h1>`);
+    </script>
+</body>
+
+</html>
