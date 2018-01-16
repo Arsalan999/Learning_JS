@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+        <script>
+            document.write("<h1>Marks Sheet</h1>");
+                var a=prompt("Enter the Total Marks\nFrom (300):");
+                    T=parseInt(a); 
+                    //var num= 300;
+                    var sum = ( T * 100) / 300; 
+                        
+                  if(sum  >= 80 )
+               { 
+                   document.write("<h1>Total Marks = 300</h1>"); 
+                   document.write(`<h1>Obtained Marks = ${T}</h1>`); 
+                   document.write("<h1>Grade = A + </h1>"); 
+                   document.write(`<h1>Percentage = ${sum}%</h1>`);
+                   document.write("<h1>Perfromance = Excelent </h1>"); 
+                   }
+                 if  (T  <80 && T  >= 70 )
+               { 
+                document.write("<h1>Total Marks = 300</h1>"); 
+                document.write(`<h1>Obtained Marks = ${T}</h1>`); 
+                document.write("<h1>Grade = A  </h1>"); 
+                document.write(`<h1>Percentage = ${sum}%</h1>`);
+                document.write("<h1>Perfromance = Good </h1>"); 
+                   }
+                   if  (T  <70 && T  >=60 )
+                 { 
+                  document.write("<h1>Total Marks = 300</h1>"); 
+                  document.write(`<h1>Obtained Marks = ${T}</h1>`); 
+                  document.write("<h1>Grade = B  </h1>"); 
+                  document.write(`<h1>Percentage = ${sum}%</h1>`);
+                  document.write("<h1>Perfromance = You Need to Improve Your Grade </h1>"); 
+                     }
+                     if (T  < 60 && T  >=50 )
+                 { 
+                  document.write("<h1>Total Marks = 300</h1>"); 
+                  document.write(`<h1>Obtained Marks = ${T}</h1>`); 
+                  document.write("<h1>Grade = C  </h1>"); 
+                  document.write(`<h1>Percentage = ${sum}%</h1>`);
+                  document.write("<h1>Perfromance = You Need to Pay High Attenion On Studies </h1>"); 
+                     }
+               if(T  <50 )
+                 { 
+                  document.write("<h1>Total Marks = 300</h1>"); 
+                  document.write(`<h1>Obtained Marks = ${T}</h1>`); 
+                  document.write("<h1>Grade = F  </h1>"); 
+                  document.write(`<h1>Percentage = ${sum}</h1>`);
+                  document.write("<h1>Perfromance = Sorry You Failed! </h1>"); 
+                     } 
+            
+               </script>
+    
+
+</body>
+</html>
