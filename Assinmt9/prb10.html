@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    var arr = [320,230,480,120];
+    for(var i=0;i<4;i++){
+        document.write(`<h1>${arr[i]} </h1>`);
+    }
+    
+    var tem=0;
+    //var arr =[];
+    document.write(`\n`);
+    document.write(`Sorted Array`);
+    for( i=0; i<4; i++)
+    {
+        for(var j=i+1; j<4; j++)
+        {
+            if(arr[i] > arr[j])
+            {
+                tem     = arr[i];
+                arr[i] = arr[j];
+                arr[j] = tem;
+            }
+        }
+    }
+
+
+
+
+    for( i=0;i<4;i++){
+        document.write(`<h1>${arr[i]}</h1>` );
+    }
+    
+    </script>
+</body>
+</html>
