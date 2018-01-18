@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+var pwd= prompt("Enter User Password:");
+if(pwd!==null){
+    var pwd1= prompt("Check Password:");
+     if(pwd === pwd1){
+         document.write(`<h1> Your entered password is correct</h1>`);
+
+    }
+    else{
+        document.write(`<h1> Your entered password is not correct</h1>`);
+    }
+}
+if(pwd===null){
+    document.write(`<h1> Please Enter the Password</h1>`);
+
+
+
+}
+</Script>
+
+</body>
+</html>
