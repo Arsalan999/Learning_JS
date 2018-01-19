@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                 A=["cake","apple pie","cookie","chips","patties"];
+                 //A = [“cake”, “apple pie”, “cookie”, “chips”, “patties”]
+document.write(`<h1>${A} </h1>`);
+
+
+      var nam =prompt("Enter the item to check Bakery");
+     for( var i=0 ; i <= 4 ;i++ )
+     {
+      if(nam === A[i])
+       {
+
+ document.write(`<h2>${A[i]} is available at ${i+1} in our bakery </h2>`);
+       }
+ else
+ {
+    document.write(`<h2>${nam} is not available at in our bakery </h2>`);
+
+
+ }
+     }
+
+    </script>
+</body>
+</html>

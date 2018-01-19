@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+document.write(`<h1>Pattern Printing</h1>`);
+var a =prompt("Take an input");
+//part (b)
+/*
+ for( var j=1; j <= a ; j++ )
+{  
+    for(var i=j ; i>=1 ; i--)
+    {
+document.write(`*`);
+    }
+    document.write("<br></br>");
+
+
+
+  
+//a)
+for( var j=1; j <= a ; j++ )
+{  
+    for(var i=1 ; i<=a ; i++)
+    {
+document.write(`*`);
+    }
+    document.write("<br></br>");
+
+}
+*/
+//c)
+//for(var i=a; i>=1; --i)
+  //  {
+    //    for(var j=1; j<=i; ++j)
+      //  {
+        //    document.write(`* `);
+     //   }
+      //  document.write(`<br></br>`);
+   // }
+
+
+//d)
+var columns=1;
+
+    for(var i=1;i<a*2;i++)
+    {
+        for(var j=1; j<=columns; j++)
+        {
+            document.write("*");
+        }
+
+        if(i < a)
+        {
+            /* Increment number of columns per row for upper part */
+            columns++;
+        }
+        else
+        {
+            /* Decrement number of columns per row for lower part */
+            columns--;
+        }
+
+        /* Move to next line */
+        document.write(`<br></br>`);
+    }
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
