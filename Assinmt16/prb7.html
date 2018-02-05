@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <div class="main">
+
+        <h3>Click Counter</h3>
+        <button id="clickme">Click me: 0</button>
+        
+        <h4>Good practice: no JavaScript code in HTML</h4>
+        
+      </div>
+  <script>  
+      var button = document.getElementById('clickme'),
+      count = 0;
+    button.onclick = function() {
+      count += 1;
+      button.innerHTML = "Click me: " + count;
+    }
+</script>
+</body>
+</html>

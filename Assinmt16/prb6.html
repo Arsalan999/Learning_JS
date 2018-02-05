@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+        <div id="div1" >
+        
+            </div>
+        
+    <script>
+        var names = ["John", "Doe", "Mark", "James"];
+        var data = ["10", "8", "10", "9"];
+
+        function Display(names, data) {
+            document.getElementById("div1").innerHTML = "";
+            for ( i = 0; i < names.length; i++) {
+                document.getElementById("div1").innerHTML +=`<h3>${i} ) ${names[i]} = ${data[i]} <button onclick="clickme('${i}')"> Delete </button><br></h3>`;
+            }
+
+        }
+
+        function clickme(j) {
+
+            //  names1 = ["John", "Doe", "Mark", "James"];
+            //  data1 = ["10", "8", "10", "9"];
+
+            //document.write(`${names}`);
+            // document.write(`${data}`);
+            //   document.write(`${j}`);
+            names.splice(j, 1);
+            data.splice(j, 1);
+            Display(names, data);
+//            check_Display(names,i);
+            //       name=["John","Doe","Mark","James"];
+            //     data=["10","8","10","9"];
+            // console.log(username);
+            //names=names.splice();
+
+        }
+
+
+
+
+
+      /*  function Display1(names1, data1) {
+
+            document.write(`<h3>After Deleting Record</h3>`);
+            for (var i = 0; i < names1.length; i++) {
+                document.write(`<h3>${i} ) ${names1[i]} = ${data1[i]} <button onclick="clickme('${i}').indexOf()"> Delete </button><br></h3>`);
+            }
+
+        }*/
+
+
+        Display(names, data);
+    </script>
+
+</body>
+
+</html>
